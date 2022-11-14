@@ -1,4 +1,4 @@
-{
+*{
   box-sizing: border-box;
 }
 
@@ -6,23 +6,24 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  /* line-height: 1.5; */
+  /*line-height: 1.5;*/
+  /* vertical-align: baseline; */
 }
 
 
 
-/*h1,
+h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   margin: 0;
-}*/
+}
 
-/*p {
+p {
   margin: 0;
-}*/
+}
 
 /*Give properties to flex boxes*/
 
@@ -35,14 +36,14 @@ h6 {
   flex-direction: row;
   justify-content: space-between;
   align-items:center;
-  border-style: solid;
+  border-style: none;
   border-width: 3px;
   border-color: grey;
   border-left-color: lightblue;
   border-right-color: lightblue;
   padding: 3px;
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   background-color: lightblue;
 }
 
@@ -63,16 +64,6 @@ h6 {
   margin-right: 5px;
 }
 
-.hero-banner{
-  font-size: x-large;
-  border-style: dashed;
-  border-width: 0px;
-  border-color: red;
-  padding: 10px;
-  margin: 0px;
-  background-color: silver;
-}
-
 #nav-bar a {
   font-size: x-large;
   color: grey;
@@ -82,4 +73,108 @@ h6 {
   border-bottom-style: solid;
   border-bottom-width: 3px;
   border-bottom-color: grey;
+}
+
+/*Banner below navigation bar*/
+
+.hero-banner{
+  font-size: x-large;
+  color: lightblue;
+  height: 100px;
+  border-style: dashed;
+  border-width: 0px;
+  border-color: red;
+  padding: 10px;
+  margin: 0px;
+  margin-bottom: 20px;
+  background-image: url("../images/02-hero-bg.jpg");
+  background-size: 1500px;
+  position: relative;
+}
+
+/*Padding added to move text vertically lower on banner, also shadow added to 
+letters*/
+.hero-banner h2{
+    padding: 0px;
+    position:absolute;
+    bottom:10px;
+    right:50px;
+    text-shadow: -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+
+/*Main Section containing 'About Me', 'Portfolio' and 'Contact'*/
+
+.page-wrapper{
+  display: flex;
+  flex-direction:column;
+  height:fit-content;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: red;
+}
+
+
+.page-section{
+  display: flex;
+  flex-direction: row;
+  border-style: dashed;
+  border-width: 3px;
+  border-color: blue;
+  
+}
+
+/*Flex box child elements will expand to fill available space*/
+.page-section {
+  flex-grow: 1;
+}
+
+
+#about{
+height: 30%;
+justify-content: space-between;
+position: relative;
+}
+
+#work{
+height: 60%;
+position: relative;
+}
+
+#contact{
+height: 10%;
+justify-content: space-between;
+position: relative;
+}
+
+#about h2, #work h2, #contact h2{
+  width: 15%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  font-size: xx-large;
+  color: grey;
+  text-align: right;
+  padding: 5px;
+  background-color: white;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: grey;
+}
+
+.MyPicture{
+  width: 10%;
+  height: 100%;
+}
+
+.MyPicture img {
+  width: auto;
+  height:160px;
+}
+
+#about p{
+  width: 60%;
+  font-size: large;
 }

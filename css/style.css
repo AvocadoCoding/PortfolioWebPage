@@ -80,6 +80,7 @@ p {
 .hero-banner{
   font-size: x-large;
   color: lightblue;
+  text-align: center;
   height: 100px;
   padding: 10px;
   margin: 0px;
@@ -120,7 +121,6 @@ letters*/
 
 #about{
 height: 30%;
-justify-content: space-between;
 position: relative;
 }
 
@@ -131,7 +131,6 @@ position: relative;
 
 #contact{
 height: 10%;
-justify-content: space-between;
 position: relative;
 }
 
@@ -151,18 +150,23 @@ position: relative;
 }
 
 .MyPicture{
-  width: 10%;
+  width: 120px;
   height: 100%;
+  margin-left: 10px;
 }
 
 .MyPicture img {
   width: auto;
   height:160px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: grey;
 }
 
 #about p{
   width: 70%;
   font-size: large;
+  margin-left: 20px;
 }
 
 /* Grid of portfolio images and links*/
@@ -221,39 +225,100 @@ position: relative;
   font-size: x-large;
 }
 
+.categoryGridArea h4 {
+  background-color: rgba(128,128,128,0.8);
+  color: lightblue;
+  font-size: medium;
+}
+
+#contact a{
+  margin-left: 40px;
+  margin-top: 15px;
+}
+
+#contact address{
+  margin-top: 15px;
+}
 
 /* Media Selector*/
 
 /*-->Set some flex wraps to columns when
 screen gets smaller?*/
 
-/*@media only screen and (max-width: 1000px) {
-  #navigation{
-    display: none;
+@media only screen and (max-width: 1100px) {
+  .page-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .icons{
     margin-left: auto;
   }
+  #about h2, #work h2, #contact h2{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+    font-size: x-large;
+    color: grey;
+    text-align: center;
+    padding: 5px;
+    background-color: lightblue;
+    border-right-style: solid;
+    border-right-width: 0px;
+    border-right-color: grey;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: grey;
+  }
+  .header-wrapper h1 {
+    width: 30%;
+    font-size: xx-large;
+    color: lightblue;
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
+  }
+ 
+  .hero-banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+  }
 }
 
-@media only screen and (max-width: 600px) {
-  #headline{
-    position: static;
-    margin: 20px;
+@media only screen and (max-width: 640px) {
+  #nav-bar{
+    display: none;
   }
-  #heroGrid{
-    grid-template-areas: 
-    "featuredProduct featuredProduct"
-    "secondaryProduct CTA";
+  
+  .header-wrapper h1 {
+    width: 100%;
+    font-size: xx-large;
+    color: lightblue;
+    text-align: center;
+    padding: 5px;
+    background-color: grey;
   }
-  #categoryGrid{
-    grid-template-rows: 300px 300px 300px 300px 300px;
+  #categoryGrid {
+    width: 70%;
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 200px 100px 100px 100px 100px;
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "bookcases"
-    "bedroom"
-    "patio"
-    "couches"
-    "desks";
+    grid-template-areas:
+    "Project1" 
+    "Project2" 
+    "Project3"
+    "Project4" 
+    "Project5"
+    ;
   }
-}*/
+  /*Removes header in banner bar position adjustment to centre it beter*/
+  .hero-banner h2{
+    right:0px;
+  }
+}

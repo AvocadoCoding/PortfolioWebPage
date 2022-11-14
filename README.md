@@ -1,6 +1,12 @@
 # PortfolioWebPage
 
-
+To do:
+- add descriptive text for screen reader in image sections (banner not necessaty to describe)
+- add comments to HTML and CSS code
+- Update readme file, why I did project, screenshot, deployed website link
+- Upload onto GitHub and deploy webpage, insert webpage link into README and contact 
+details part of web page.
+- Add Figma sketches to Github a well?
 
 
 

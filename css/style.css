@@ -188,22 +188,22 @@ position: relative;
   background-image: url("../images/02-portfolio-4.jpg");
 
 }
-#bedroom {
+#Project2 {
   grid-area: Project2;
   background-image: url("../images/02-portfolio-1.jpg");
 }
 
-#couches {
+#Project3 {
   grid-area: Project3;
   background-image: url("../images/02-portfolio-2.jpg");
 }
 
-#patio {
+#Project4 {
   grid-area: Project4;
   background-image: url("../images/02-portfolio-3.jpg");
 }
 
-#desks {
+#Project5 {
   grid-area: Project5;
   background-image: url("../images/02-run-buddy.jpg");
 }
@@ -242,8 +242,8 @@ position: relative;
 
 /* Media Selector*/
 
-/*-->Set some flex wraps to columns when
-screen gets smaller?*/
+/*-->Set page section flex-wrap to columns when screen 
+width gets smaller, to arrange items better on a smaller screen*/
 
 @media only screen and (max-width: 1100px) {
   .page-section{

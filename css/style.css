@@ -1,7 +1,10 @@
+/*For whole web page, default is to include padding and border in elements
+total width and height*/
 *{
   box-sizing: border-box;
 }
 
+/*body default margin and padding properties and font*/
 body {
   margin: 0;
   padding: 0;
@@ -10,8 +13,7 @@ body {
   /* vertical-align: baseline; */
 }
 
-
-
+/*General default position property for headings and parapgraphs*/
 h1,
 h2,
 h3,
@@ -25,11 +27,8 @@ p {
   margin: 0;
 }
 
-/*Give properties to flex boxes*/
 
-
-/* My name and navigation bar flexbox*/
-
+/* My name and navigation bar flexbox, header and nav bar*/
 .header-wrapper{
   display: flex;
   flex-wrap: wrap;
@@ -75,8 +74,7 @@ p {
   border-bottom-color: grey;
 }
 
-/*Banner below navigation bar*/
-
+/*Banner below navigation bar with background image*/
 .hero-banner{
   font-size: x-large;
   color: lightblue;
@@ -101,8 +99,8 @@ letters*/
 }
 
 
-/*Main Section containing 'About Me', 'Portfolio' and 'Contact'*/
-
+/*Main Section of web page containing 'About Me', 'Portfolio' and 
+'Contact' sections, structured as a column flex box*/
 .page-wrapper{
   display: flex;
   flex-direction:column;
@@ -110,7 +108,7 @@ letters*/
   background-color: lightblue;
 }
 
-/*Flex box child elements will expand to fill available space*/
+/*Row flex boxes, child elements will expand to fill available space*/
 .page-section{
   display: flex;
   flex-direction: row;
@@ -118,7 +116,7 @@ letters*/
   flex-grow: 1;
 }
 
-
+/*Indicating relative height of flex boxes, overwritten by content*/
 #about{
 height: 30%;
 position: relative;
@@ -242,8 +240,11 @@ position: relative;
 
 /* Media Selector*/
 
-/*-->Set page section flex-wrap to columns when screen 
-width gets smaller, to arrange items better on a smaller screen*/
+/*-->Media function adjustment to page at 1100px page width;
+set page section flex-wrap to columns when screen 
+width gets smaller, to arrange items better on a smaller screen. 
+Also some adjustments to centre elements and minor 
+formatting changes for column layout*/
 
 @media only screen and (max-width: 1100px) {
   .page-section{
@@ -290,6 +291,9 @@ width gets smaller, to arrange items better on a smaller screen*/
   }
 }
 
+/*-->Media function adjustment to page at 1100px page width;
+nav bar removed to free up space, grid rearranged to a single
+column layout, minor heading formatting changes*/
 @media only screen and (max-width: 640px) {
   #nav-bar{
     display: none;
@@ -317,7 +321,6 @@ width gets smaller, to arrange items better on a smaller screen*/
     "Project5"
     ;
   }
-  /*Removes header in banner bar position adjustment to centre it beter*/
   .hero-banner h2{
     right:0px;
   }

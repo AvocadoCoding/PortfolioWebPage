@@ -16,15 +16,17 @@ https://avocadocoding.github.io/PortfolioWebPage/
 ## Screenshot images of Portfolio Web Page, at different screen widths:
 
 [Screenshot of first part of Portfolio Web Page in wide screen format](images\ImageOfDeployedWebPagePart1.png)
+
 [Screenshot of second part of Portfolio Web Page in wide screen format](images\ImageOfDeployedWebPagePart2.png)
+
 [Screenshot of first part of Portfolio Web Page in <1100px screen width format](images\ImageOfDeployedWebPageMiddleWidthFormatPart1.png)
+
 [Screenshot of second part of Portfolio Web Page in <1100px screen width format](images\ImageOfDeployedWebPageMiddleWidthFormatPart2.png)
+
 [Screenshot of first part of Portfolio Web Page in <640px screen width format](images\ImageOfDeployedWebPageNarrowFormatPart1.png)
+
 [Screenshot of second part of Portfolio Web Page in <640px screen width format](images\ImageOfDeployedWebPageNarrowFormatPart2.png)
 
-To do:
-- add comments to HTML and CSS code
-- Add Figma sketches to Github a well?
 
 
 

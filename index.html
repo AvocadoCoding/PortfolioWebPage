@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-gb">
-
+<!--HTML head section; character set is set to UTF-8, the viewport meta makes the 
+  web page content responsive to the viewport width, the 'X-UA-Compatible' meta sets
+  the version of internet explorer should render the page (Edge), the name of webpage 
+  appears as 'Christopher// Web Developer' in the browser tab, CSS file 'style.css' is 
+  linked to HTML file.-->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +29,13 @@
     <h2>Welcome to my Coding Portfolio!</h2>
   </section>
 
+  <!--Page wrapper section contains the main content of the page-->
   <main class="page-wrapper">
-    <!-- about me -->
+    <!-- about me section; includes my picture and paragraph introduction -->
     <section class="page-section" id="about">
       <h2>About Me</h2>
-      <section class="MyPicture"><img src="./images/HeadshotPicture.jpg" 
-        alt="Headshot Picture of Christopher Gardner"></section>
+      <figure class="MyPicture"><img src="./images/HeadshotPicture.jpg" 
+        alt="Headshot Picture of Christopher Gardner"></figure>
       <p> Hi! Thanks for looking at my coding portfolio. I am an aspiring programmer
         working particularly on front end web development. To do this I use HTML5, 
         CSS3 and Javascript programming languages and also work with jQuery, React.js
@@ -43,10 +48,10 @@
       </p>
     </section>
 
-    <!-- portfolio container, images with links to projects are contained in 
-    a grid. 'Dead' links have been used until active projects to
-    are ready to link to, the link underline has been removed with 
-    "test-decoration: none" command -->
+    <!-- work section; portfolio container, images with links to projects are 
+    contained in a grid. 'Dead' links have been used until active projects to
+    are ready to link to, the default link formatting underline has been removed 
+    with "test-decoration: none" command -->
     <section class="page-section" id="work">
       <h2>Work</h2>
       <section id="categoryGrid">
@@ -78,7 +83,8 @@
       </section>
     </section>
 
-    <!-- contact -->
+    <!-- contact section; includes e-mail address, link to webpage and
+    link to my GitHub portfolio-->
     <section class="page-section contact" id="contact">
       <h2>Contact Me</h2>
       <address><a href="mailto:cagrdner2005@gmail.com">
